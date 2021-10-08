@@ -1,0 +1,5 @@
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+php_flag  display_errors        on
+php_value error_reporting       2039
